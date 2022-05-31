@@ -1,25 +1,46 @@
+// global variables with moment.js displaying day date and time
 var rootEl = $('#root');
-var tableEL = $('#table');
 var timeEL  = $('.hours');
 var activityEL = $('.activities');
-var position = 0;
+var position = hours - 9;
 var weekday = $('#currentDay');
-var saveBtn = $('#saveBtn');
-var hours = ['9AM', '10AM', '11AM', '12PM', '1PM', '2PM', '3PM', '4PM','5PM',];
-
+var saveBtn = $('.saveBtn');
+// var hours = ['9AM', '10AM', '11AM', '12PM', '1PM', '2PM', '3PM', '4PM','5PM',];
 var today = moment().format("dddd, MMMM Do YYYY, h:mm:ss a");
 $("#currentDay").text(today);
 
-// var dayWeek = today.format("[Today is] dddd")
-// $("#2a").text(dayWeek);
+// create functions 
+function PastPresentFutureColorCoding() {
+    today = moment().hours();
+
+    $(".businesshours").each(function () {
+        
+    })
+};
+
+
+// ------------------------------------
+
+function enterActivitiesIntoLocalStorage(params) {
+    
+};
 
 
 
 
 
-
-
-
+// Criteria 
+// GIVEN I am using a daily planner to create a schedule
+// WHEN I scroll down
+// THEN I am presented with time blocks for standard business hours
+// WHEN I view the time blocks for that day
+// THEN each time block is color-coded to indicate whether it is in the past, present, or future
+// WHEN I click into a time block
+// THEN I can enter an event
+// WHEN I click the save button for that time block
+// THEN the text for that event is saved in local storage
+// WHEN I refresh the page
+// THEN the saved events persist
 
 
 
