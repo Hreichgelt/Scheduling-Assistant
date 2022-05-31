@@ -1,55 +1,90 @@
+var rootEl = $('#root');
 var tableEL = $('#table');
-var timeEL  = $('#1');
-var activityEL = $('#2');
-var hours = ['9AM', '10AM', '11AM', 'NOON', '1PM', '2PM', '3PM', '4PM','5PM',];
+var timeEL  = $('.hours');
+var activityEL = $('.activities');
 var position = 0;
 var weekday = $('#currentDay');
 var saveBtn = $('#saveBtn');
+var hours = ['9AM', '10AM', '11AM', '12PM', '1PM', '2PM', '3PM', '4PM','5PM',];
+
+var today = moment().format("dddd, MMMM Do YYYY, h:mm:ss a");
+$("#currentDay").text(today);
+
+// var dayWeek = today.format("[Today is] dddd")
+// $("#2a").text(dayWeek);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // let todayIs = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'][new Date().getDay()]
 // document.write(weekday)
-
-function insertActivityIntoStorage(hours, activity) {
-    
-}
-
-saveBtn.on('click', function(event) {
-    event.preventDefault();
-    if (activityEL.value === "") {
-        return
-    }
-    saveActivities();
-})
-
-function saveActivities() {
-    var activityEL = activityEL.value.trim();
-    var timeEL = timeEL.value.trim();
-}
-
-
-
-
-// hours.html(function() {
-// time.val()
-// });
-
-// $(timeEL).
-// $(timeEL) = hours.attr();
-
-// $('ul li:first-child') = hours.length;
-
-// timeEL.html = hours.length
-// timeEL.select(hours);
-
-
+// leaving off on line 11 correlating to line 74 in code quiz
 // for (var i = 0; i < hours.length; i++) {
-//     timeEL = append.li[0];
+//     var hoursEl = $('<li>');
+//     hoursEl.text(hours[i]);
+//     hoursEl.addClass('hours');
+//     rootEl.append(hoursEl);
+// };
 
+// for (let i = 0; i < hours.length; i++) {
+//     var ActivitiesEl = 
 // }
 
-// function displayImage() {
-    // var imageEl = document.createElement('img');
-    // var imageURL = './images/one.png'
-    // imageEl.src = imageURL;
-    // imageEl.alt = 'one';
 
+// var saveActivitiesAndTimes = JSON.parse(localStorage.getItem(""));
+
+// function insertActivityIntoStorage(hours, activity) {
+//     var row = hour.insertRow();
+//     var cell1 = row.insertCell(0);
+//     var cell2 = row.insertCell(1);
+//     cell1.html = hours;
+//     cell2.html = activityEL;
 // };
+
+// for (let i = 0; i < array.length; i++) {
+//     const element = array[i];
+    
+// };
+
+// saveBtn.on('click', function(event) {
+//     event.preventDefault();
+//     if (activityEL.text === "") {
+//         return
+//     }
+//     saveActivities();
+// });
+
+// function saveActivities() {
+//     var activityEL = activityEL.text.trim();
+//     var timeEL = timeEL.value.trim();
+// };
+
+

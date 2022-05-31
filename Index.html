@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./Assets/style.css" />
   <title>Work Day Scheduler</title>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
 </head>
 
 <body>
@@ -19,28 +20,191 @@
     <p class="lead">A simple calendar app for scheduling your work day</p>
     <p id="currentDay" class="lead">Today is: </p>
   </header>
-  <div class="container">
-    <!-- Timeblocks go here -->
+  <div class="container" id="root">
+    <section class="table" id="table">
+      <ul class="list-group list-group-horizontal">
+        <li class="hours">9am</li>
+        <li class="activities">
+          <textarea></textarea>
+        </li>
+        <li class="list-group-item-3">
+          <!-- target this li onclick save to local storage  -->
+          <button id="saveBtn">
+            <i class="fa fa-save"></i>
+          </button>
+        </li>
+      </ul>
   </div>
-  <section class="table" id="table">
-    <ul class="list-group list-group-horizontal">
-      <li class="list-group-item" id="1">9am</li>
-      <li class="list-group-item" id="2">
-        <textarea></textarea>
-      </li>
-      <li class="list-group-item" id="3">
-        <!-- target this li onclick save to local storage  -->
-        <button id="saveBtn">
-          <i class="fa fa-save"></i>
-        </button>
-      </li>
-    </ul>
+  <div class="container" id="root">
+    <section class="table" id="table">
+      <ul class="list-group list-group-horizontal">
+        <li class="hours">9am</li>
+        <li class="activities">
+          <textarea></textarea>
+        </li>
+        <li class="list-group-item-3">
+          <!-- target this li onclick save to local storage  -->
+          <button id="saveBtn">
+            <i class="fa fa-save"></i>
+          </button>
+        </li>
+      </ul>
+  </div>
+  <div class="container" id="root">
+    <section class="table" id="table">
+      <ul class="list-group list-group-horizontal">
+        <li class="hours">9am</li>
+        <li class="activities">
+          <textarea></textarea>
+        </li>
+        <li class="list-group-item-3">
+          <!-- target this li onclick save to local storage  -->
+          <button id="saveBtn">
+            <i class="fa fa-save"></i>
+          </button>
+        </li>
+      </ul>
+  </div>
+  <div class="container" id="root">
+    <section class="table" id="table">
+      <ul class="list-group list-group-horizontal">
+        <li class="hours">9AM</li>
+        <li class="activities">
+          <textarea></textarea>
+        </li>
+        <li class="list-group-item-3">
+          <!-- target this li onclick save to local storage  -->
+          <button id="saveBtn">
+            <i class="fa fa-save"></i>
+          </button>
+        </li>
+      </ul>
+  </div>
+  <div class="container" id="root">
+    <section class="table" id="table">
+      <ul class="list-group list-group-horizontal">
+        <li class="hours">10AM</li>
+        <li class="activities">
+          <textarea></textarea>
+        </li>
+        <li class="list-group-item-3">
+          <!-- target this li onclick save to local storage  -->
+          <button id="saveBtn">
+            <i class="fa fa-save"></i>
+          </button>
+        </li>
+      </ul>
+  </div>
+  <div class="container" id="root">
+    <section class="table" id="table">
+      <ul class="list-group list-group-horizontal">
+        <li class="hours">11AM</li>
+        <li class="activities">
+          <textarea></textarea>
+        </li>
+        <li class="list-group-item-3">
+          <!-- target this li onclick save to local storage  -->
+          <button id="saveBtn">
+            <i class="fa fa-save"></i>
+          </button>
+        </li>
+      </ul>
+  </div>
+  <div class="container" id="root">
+    <section class="table" id="table">
+      <ul class="list-group list-group-horizontal">
+        <li class="hours">12PM</li>
+        <li class="activities">
+          <textarea></textarea>
+        </li>
+        <li class="list-group-item-3">
+          <!-- target this li onclick save to local storage  -->
+          <button id="saveBtn">
+            <i class="fa fa-save"></i>
+          </button>
+        </li>
+      </ul>
+  </div>
+  <div class="container" id="root">
+    <section class="table" id="table">
+      <ul class="list-group list-group-horizontal">
+        <li class="hours">1PM</li>
+        <li class="activities">
+          <textarea></textarea>
+        </li>
+        <li class="list-group-item-3">
+          <!-- target this li onclick save to local storage  -->
+          <button id="saveBtn">
+            <i class="fa fa-save"></i>
+          </button>
+        </li>
+      </ul>
+  </div>
+  <div class="container" id="root">
+    <section class="table" id="table">
+      <ul class="list-group list-group-horizontal">
+        <li class="hours">2PM</li>
+        <li class="activities">
+          <textarea></textarea>
+        </li>
+        <li class="list-group-item-3">
+          <!-- target this li onclick save to local storage  -->
+          <button id="saveBtn">
+            <i class="fa fa-save"></i>
+          </button>
+        </li>
+      </ul>
+  </div>
+  <div class="container" id="root">
+    <section class="table" id="table">
+      <ul class="list-group list-group-horizontal">
+        <li class="hours">3PM</li>
+        <li class="activities">
+          <textarea></textarea>
+        </li>
+        <li class="list-group-item-3">
+          <!-- target this li onclick save to local storage  -->
+          <button id="saveBtn">
+            <i class="fa fa-save"></i>
+          </button>
+        </li>
+      </ul>
+  </div>
+  <div class="container" id="root">
+    <section class="table" id="table">
+      <ul class="list-group list-group-horizontal">
+        <li class="hours">4PM</li>
+        <li class="activities">
+          <textarea></textarea>
+        </li>
+        <li class="list-group-item-3">
+          <!-- target this li onclick save to local storage  -->
+          <button id="saveBtn">
+            <i class="fa fa-save"></i>
+          </button>
+        </li>
+      </ul>
+  </div>
+  <div class="container" id="root">
+    <section class="table" id="table">
+      <ul class="list-group list-group-horizontal">
+        <li class="hours">5PM</li>
+        <li class="activities">
+          <textarea></textarea>
+        </li>
+        <li class="list-group-item-3">
+          <!-- target this li onclick save to local storage  -->
+          <button id="saveBtn">
+            <i class="fa fa-save"></i>
+          </button>
+        </li>
+      </ul>
+  </div>
 
 
-
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="./Assets/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script> -->
+  <script src="./Assets/script.js"></script>
 </body>
 
 </html>
