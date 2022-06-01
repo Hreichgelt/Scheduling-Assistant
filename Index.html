@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./Assets/style.css" />
   <title>Work Day Scheduler</title>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+  <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script> -->
 </head>
 
 <body>
@@ -21,84 +21,75 @@
     <p id="currentDay" class="lead">Today is: </p>
   </header>
 
-
-
       <div class="container">
         <div class="row" id="hour-9">
-          <div class="col-1 hours">09:00AM</div>
-            <textarea class="col-10 p-0 textarea"></textarea>
+          <div class="hours">09:00AM</div>
+            <textarea class="col-10 description"></textarea>
             <button type="button" class="saveBtn btn btn-dark col-1">
               <i class="fa fa-save "></i>
             </button>
         </div>
         <div class="row" id="hour-10">
-          <div class="col-1 hours">10:00AM</div>
-            <textarea class="col-10 p-0 textarea"></textarea>
+          <div class="hours">10:00AM</div>
+            <textarea class="col-10 description"></textarea>
             <button type="button" class="saveBtn btn btn-dark col-1">
               <i class="fa fa-save "></i>
             </button>
         </div>
         <div class="row" id="hour-11">
-          <div class="col-1 hours">11:00AM</div>
-            <textarea class="col-10 p-0 textarea"></textarea>
+          <div class="hours">11:00AM</div>
+            <textarea class="col-10 description"></textarea>
             <button type="button" class="saveBtn btn btn-dark col-1">
               <i class="fa fa-save "></i>
             </button>
         </div>
         <div class="row" id="hour-12">
-          <div class="col-1 hours">12:00PM</div>
-            <textarea class="col-10 p-0 textarea"></textarea>
+          <div class="hours">12:00PM</div>
+            <textarea class="col-10 description"></textarea>
             <button type="button" class="saveBtn btn btn-dark col-1">
               <i class="fa fa-save "></i>
             </button>
         </div>
         <div class="row" id="hour-13">
-          <div class="col-1 hours">01:00PM</div>
-            <textarea class="col-10 p-0 textarea"></textarea>
+          <div class="hours">01:00PM</div>
+            <textarea class="col-10 description"></textarea>
             <button type="button" class="saveBtn btn btn-dark col-1">
               <i class="fa fa-save "></i>
             </button>
         </div>
         <div class="row" id="hour-14">
-          <div class="col-1 hours">02:00PM</div>
-            <textarea class="col-10 p-0 textarea"></textarea>
+          <div class="hours">02:00PM</div>
+            <textarea class="col-10 description"></textarea>
             <button type="button" class="saveBtn btn btn-dark col-1">
               <i class="fa fa-save "></i>
             </button>
         </div>
         <div class="row" id="hour-15">
-          <div class="col-1 hours">03:00PM</div>
-            <textarea class="col-10 p-0 textarea"></textarea>
+          <div class="hours">03:00PM</div>
+            <textarea class="col-10 description"></textarea>
             <button type="button" class="saveBtn btn btn-dark col-1">
               <i class="fa fa-save "></i>
             </button>
         </div>
         <div class="row" id="hour-16">
-          <div class="col-1 hours">04:00PM</div>
-            <textarea class="col-10 p-0 textarea"></textarea>
+          <div class="hours">04:00PM</div>
+            <textarea class="col-10 description"></textarea>
             <button type="button" class="saveBtn btn btn-dark col-1">
               <i class="fa fa-save "></i>
             </button>
         </div>
         <div class="row" id="hour-17">
-          <div class="col-1 hours">05:00PM</div>
-            <textarea class="col-10 p-0 textarea"></textarea>
+          <div class="hours">05:00PM</div>
+            <textarea class="col-10 description"></textarea>
             <button type="button" class="saveBtn btn btn-dark col-1">
               <i class="fa fa-save "></i>
             </button>
         </div>
-     
-
-
-
-
       </div>
 
-
-
-
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script> -->
+  <!-- commented out this link and moved to top so the first thing the page does is call moment for the date and time -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   <script src="./Assets/script.js"></script>
 </body>
 
