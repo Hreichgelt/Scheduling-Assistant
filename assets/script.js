@@ -12,7 +12,6 @@ saveBtn.click(function(event) {
     var description = clickedBtn.siblings('.description');
     var hours = clickedBtn.parent().attr("id");
     localStorage.setItem(hours, description.val());
-    console.log(hours.val());
       });
 
 // saving hours and textbox entry into local storage 
@@ -30,11 +29,9 @@ $("#17 .description").val(localStorage.getItem("17"));
 // color-coding for past present future
 function PastPresentFutureColorCoding() {
    var presentTime = moment().hour();
-   console.log("Present Time" + presentTime);
 
     $(".time-block").each(function () {
         var time = parseInt($(this).attr("id"));
-        console.log(presentTime, time);
 
         // help from TA's to target the right element to get color coding to work
         if (presentTime > time) {
