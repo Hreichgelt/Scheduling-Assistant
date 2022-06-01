@@ -1,17 +1,34 @@
 # Scheduling-Assistant
 keep track of your schedule with this editable calendar application 
 
-Criteria 
-GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-WHEN I scroll down
-THEN I am presented with time blocks for standard business hours
-WHEN I view the time blocks for that day
-THEN each time block is color-coded to indicate whether it is in the past, present, or future
-WHEN I click into a time block
-THEN I can enter an event
-WHEN I click the save button for that time block
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
+[LIVE SITE](https://hreichgelt.github.io/Scheduling-Assistant/)
+
+## TABLE OF CONTENTS
+
+1. [Description](#description)
+2. [Usage](#USAGE)
+3. [Visuals](#visuals)
+4. [Authors Acknowledgments](#authors-and-acknowledgments)
+4. [Resources](#resources)
+
+## DESCRIPTION 
+This is a schedule assistant where you can enter to-do-items into each hour section and save to local storage. This data will be saved even when the browser is closed. The local day, date, and time is displayed at the top and the hours are color-coded into past, present, future. 
+
+
+## USAGE 
+To use this application, just enter to-do-items into the text area for the time needed, click the save button on the right and you are done. 
+
+## VISUALS 
+![Code-Quiz]()
+
+
+## AUTHORS AND ACKNOWLEDGMENTS
+Hans Reichgelt
+Instructional Staff for coding bootcamp
+John Titus - Tutor
+
+## RESOURCES 
+1. [LIVE SITE](https://hreichgelt.github.io/Scheduling-Assistant/)
+
+2. [REPOSITORY](https://github.com/Hreichgelt/Scheduling-Assistant)
+

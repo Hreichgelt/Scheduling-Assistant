@@ -15,12 +15,24 @@ $("#currentDay").text(today);
 
 // create functions 
 function PastPresentFutureColorCoding() {
-    today = moment().hours();
+   var presentTime = moment().hours();
+   console.log("Present Time" + presentTime);
 
-    $(".businesshours").each(function () {
-        
-    })
-};
+    $("textarea").each(function () {
+        var time = parseInt($(this.parent().attr("id").substring(4)));
+        console.log(currentTime, time);
+
+        if (currentTime > time) {
+            $(this).addClass("past")
+        } else if (currentTime < time) {
+            $(this).addClass("future");
+        } else {
+            $(this).addClass("present")
+        }
+    });
+    }
+
+ PastPresentFutureColorCoding();
 
 // ------------------------------------
 
@@ -30,8 +42,10 @@ saveBtn.click(function(event) {
 var clickedBtn = $(event.target);
 var textarea = clickedBtn.siblings('.textarea');
 console.log(textarea.val());
-localStorage.setItem("value", textarea.val());
-  })
+localStorage.setItem(".hours", textarea.val());
+  });
+
+
 
 
 
