@@ -16,34 +16,41 @@ saveBtn.click(function(event) {
       });
 
 // saving hours and textbox entry into local storage 
-$("#hour-9 .description").val(localStorage.getItem("hour-9"));
-$("#hour-10 .description").val(localStorage.getItem("hour-10"));
-$("#hour-11 .description").val(localStorage.getItem("hour-11"));
-$("#hour-12 .description").val(localStorage.getItem("hour-12"));
-$("#hour-13 .description").val(localStorage.getItem("hour-13"));
-$("#hour-14 .description").val(localStorage.getItem("hour-14"));
-$("#hour-15 .description").val(localStorage.getItem("hour-15"));
-$("#hour-16 .description").val(localStorage.getItem("hour-16"));
-$("#hour-17 .description").val(localStorage.getItem("hour-17"));
+$("#9 .description").val(localStorage.getItem("9"));
+$("#10 .description").val(localStorage.getItem("10"));
+$("#11 .description").val(localStorage.getItem("11"));
+$("#12 .description").val(localStorage.getItem("12"));
+$("#13 .description").val(localStorage.getItem("13"));
+$("#14 .description").val(localStorage.getItem("14"));
+$("#15 .description").val(localStorage.getItem("15"));
+$("#16 .description").val(localStorage.getItem("16"));
+$("#17 .description").val(localStorage.getItem("17"));
 
 
 // color-coding for past present future
 function PastPresentFutureColorCoding() {
-   var presentTime = moment().hours();
+   var presentTime = moment().hour();
    console.log("Present Time" + presentTime);
 
-    $(".description").each(function () {
-        var time = parseInt($(this).parent().attr("id"));
+    $(".time-block").each(function () {
+        var time = parseInt($(this).attr("id"));
         console.log(presentTime, time);
 
+        // help from TA's to target the right element to get color coding to work
         if (presentTime > time) {
-            $(this).addClass("past")
+            $(this).children(".description").addClass("past")
+            $(this).children(".description").removeClass("present");
+            $(this).children(".description").removeClass("future");
         } else if (presentTime < time) {
-            $(this).addClass("future");
+            $(this).children(".description").addClass("future");
+            $(this).children(".description").removeClass("present");
+            $(this).children(".description").removeClass("past");
         } else {
-            $(this).addClass("present")
+            $(this).children(".description").addClass("present");
+            $(this).children(".description").removeClass("past");
+            $(this).children(".description").removeClass("future");
         }
     });
-}
+    }
 
  PastPresentFutureColorCoding();
