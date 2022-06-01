@@ -19,7 +19,7 @@ This is a schedule assistant where you can enter to-do-items into each hour sect
 To use this application, just enter to-do-items into the text area for the time needed, click the save button on the right and you are done. 
 
 ## VISUALS 
-![Code-Quiz]()
+![]()
 
 
 ## AUTHORS AND ACKNOWLEDGMENTS

@@ -1,4 +1,3 @@
-// global variables with moment.js displaying day date and time
 // refactoring to clean up variables that are no longer needed
 var saveAllActivitiesAndTimes = [];
 var saveBtn = $('.saveBtn');
@@ -16,7 +15,7 @@ saveBtn.click(function(event) {
     console.log(hours.val());
       });
 
-// saving hours and texbox entry into local storage 
+// saving hours and textbox entry into local storage 
 $("#hour-9 .description").val(localStorage.getItem("hour-9"));
 $("#hour-10 .description").val(localStorage.getItem("hour-10"));
 $("#hour-11 .description").val(localStorage.getItem("hour-11"));
@@ -34,7 +33,7 @@ function PastPresentFutureColorCoding() {
    console.log("Present Time" + presentTime);
 
     $(".description").each(function () {
-        var time = parseInt($(this).parent().attr("id").substring(1, 4));
+        var time = parseInt($(this).parent().attr("id"));
         console.log(presentTime, time);
 
         if (presentTime > time) {
@@ -45,8 +44,6 @@ function PastPresentFutureColorCoding() {
             $(this).addClass("present")
         }
     });
-    }
+}
 
  PastPresentFutureColorCoding();
-
-
