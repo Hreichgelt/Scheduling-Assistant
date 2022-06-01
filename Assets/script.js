@@ -1,12 +1,16 @@
 // global variables with moment.js displaying day date and time
 var rootEl = $('#root');
 var timeEL  = $('.hours');
-var activityEL = $('.activities');
-var position = hours - 9;
+var activityEL = $('.textarea');
+var saveAllActivitiesAndTimes = [];
+// var position = hours - 9;
 var weekday = $('#currentDay');
 var saveBtn = $('.saveBtn');
-// var hours = ['9AM', '10AM', '11AM', '12PM', '1PM', '2PM', '3PM', '4PM','5PM',];
+var hours = ['9AM', '10AM', '11AM', '12PM', '1PM', '2PM', '3PM', '4PM','5PM',];
+
+
 var today = moment().format("dddd, MMMM Do YYYY, h:mm:ss a");
+console.log(today);
 $("#currentDay").text(today);
 
 // create functions 
@@ -18,12 +22,22 @@ function PastPresentFutureColorCoding() {
     })
 };
 
-
 // ------------------------------------
 
-function enterActivitiesIntoLocalStorage(params) {
+
+//  on button click we want to store the activity into the timeslot object. and then immediately console.log(variable)
+saveBtn.click(function(event) {
+var clickedBtn = $(event.target);
+var textarea = clickedBtn.siblings('.textarea');
+console.log(textarea.val());
+localStorage.setItem("value", textarea.val());
+  })
+
+
+
+// function enterActivitiesIntoLocalStorage(params) {
     
-};
+// };
 
 
 
