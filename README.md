@@ -14,7 +14,9 @@ keep track of your schedule with this editable calendar application
 
 ## DESCRIPTION
 
-This is a schedule assistant where you can enter to-do-items into each hour section and save to local storage. This data will be saved even when the browser is closed. The local day, date, and time is displayed at the top and the hours are color-coded into past, present, future.
+A simple calendar applications that allows users to save events for each hour of the day. This app runs in the browser and features a dynamically updated page powered by HTML, CSS, JQuery, and Moment.js
+
+Users can enter to-do-items into each hour section and save to local storage. This data will be saved even when the browser is closed. The local day, date, and time is displayed at the top and the hours are color-coded into past, present, future.
 
 ## USAGE
 
@@ -24,9 +26,6 @@ To use this application, just enter to-do-items into the text area for the time 
 
 ![Scheduling-Assistant](/assets/visuals/WDS.png)
 
-## AUTHORS AND ACKNOWLEDGMENTS
-
-Hans Reichgelt
 
 ## RESOURCES
 
